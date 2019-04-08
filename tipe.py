@@ -20,7 +20,14 @@ def downloadImages(imglist):
 
 
 def start():
-
+    print('''
+_______ _____  _____  _______    _____  __   __
+   |      |   |_____] |______   |_____]   \_/  
+   |    __|__ |       |______ . |          |   
+                                        
+Twitter and Instagram Picture Extractor
+_________________________________________
+    ''')
     soup = BeautifulSoup(requests.get(sys.argv[1]).text, "html.parser")
     imglist = []
 
